@@ -33,7 +33,6 @@ public class Main {
                 r++;
             }
         }
-
         System.out.println(str.substring(begin, begin + maxLen));
     }
 }
