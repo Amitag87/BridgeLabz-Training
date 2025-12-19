@@ -1,8 +1,8 @@
 import java.util.Scanner;
 class BonusCalculation {
     public static void main(String[] args) {
-        Scanner scn = new Scanner(System.in);
-        double salary = scn.nextDouble();
+        Scanner sc = new Scanner(System.in);
+        double salary = sc.nextDouble();
         int years = scn.nextInt();
         double bonusPercent = 0;
         if (years > 5) {
