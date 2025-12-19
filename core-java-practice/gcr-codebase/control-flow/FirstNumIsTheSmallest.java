@@ -1,4 +1,3 @@
-package BridgeLab;
 import java.util.*;
 public class FirstNumIsTheSmallest {
 	public static void main(String[] args) {
