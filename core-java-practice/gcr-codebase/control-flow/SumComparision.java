@@ -1,4 +1,3 @@
-package BridgeLab;
 import java.util.*;
 public class SumComparision {
 	 public static void main(String[] args) {
