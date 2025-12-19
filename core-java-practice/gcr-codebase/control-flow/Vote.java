@@ -1,4 +1,4 @@
-package BridgeLab;
+
 import java.util.*;
 public class Vote {
 	public static void main(String[] args) {
