@@ -1,4 +1,4 @@
-package BridgeLab;
+
 import java.util.*;
 public class DivisibileBy5 {
 	public static void main(String[] args) {

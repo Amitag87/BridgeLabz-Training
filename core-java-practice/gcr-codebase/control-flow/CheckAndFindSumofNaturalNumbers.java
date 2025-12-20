@@ -1,4 +1,3 @@
-package BridgeLab;
 
 import java.util.Scanner;
 

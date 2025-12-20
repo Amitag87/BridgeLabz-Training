@@ -1,5 +1,3 @@
-package BridgeLab;
-
 import java.util.Scanner;
 
 public class SpringSeason {

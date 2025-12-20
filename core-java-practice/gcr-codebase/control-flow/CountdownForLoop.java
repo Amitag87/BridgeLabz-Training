@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 62de6c3a8e096b275783d007858d7866da02ce12
 
 import java.util.Scanner;
 
