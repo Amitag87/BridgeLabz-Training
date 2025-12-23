@@ -1,40 +1,45 @@
-package strings;
+package gcrcodebase.strings;
 
-import java.util.Scanner;
-
+import java.util.*;
 public class StudentGradeCalculator {
+    static int[][] generatePCMScores(int students) {
 
-    public static int[][] generatePCMMarks(int studentCount) {
-        int[][] marks = new int[studentCount][3];
+        int[][] scores = new int[students][3]; // P, C, M
 
-        for (int i = 0; i < studentCount; i++) {
-            for (int j = 0; j < 3; j++) {
-                marks[i][j] = (int) (Math.random() * 90) + 10; // 10–99
-            }
+        for (int i = 0; i < students; i++) {
+            scores[i][0] = (int) (Math.random() * 100); // Physics
+            scores[i][1] = (int) (Math.random() * 100); // Chemistry
+            scores[i][2] = (int) (Math.random() * 100); // Maths
         }
-        return marks;
+        return scores;
     }
 
-    public static double[][] calculateResults(int[][] marks) {
-        double[][] results = new double[marks.length][3];
+    static double[][] calculateResult(int[][] scores) {
 
-        for (int i = 0; i < marks.length; i++) {
-            int total = marks[i][0] + marks[i][1] + marks[i][2];
+        double[][] result = new double[scores.length][3]; 
+        for (int i = 0; i < scores.length; i++) {
+
+            int total = scores[i][0] + scores[i][1] + scores[i][2];
             double average = total / 3.0;
             double percentage = (total / 300.0) * 100;
 
-            results[i][0] = total;
-            results[i][1] = Math.round(average * 100.0) / 100.0;
-            results[i][2] = Math.round(percentage * 100.0) / 100.0;
+            average = Math.round(average * 100.0) / 100.0;
+            percentage = Math.round(percentage * 100.0) / 100.0;
+
+            result[i][0] = total;
+            result[i][1] = average;
+            result[i][2] = percentage;
         }
-        return results;
+        return result;
     }
 
-    public static String[] calculateGrades(double[][] results) {
-        String[] grades = new String[results.length];
+    static String[] calculateGrade(double[][] result) {
 
-        for (int i = 0; i < results.length; i++) {
-            double percentage = results[i][2];
+        String[] grades = new String[result.length];
+
+        for (int i = 0; i < result.length; i++) {
+
+            double percentage = result[i][2];
 
             if (percentage >= 80)
                 grades[i] = "A";
@@ -52,5 +57,38 @@ public class StudentGradeCalculator {
         return grades;
     }
 
-    public static void displayScorecard(int[][] marks, double[][] results, String[] grades) {
-        System.out.println("\nSTUDENT SCORECARD");
+    static void displayScoreCard(int[][] scores, double[][] result, String[] grades) {
+
+        System.out.println("\nStudent\tPhysics\tChemistry\tMaths\tTotal\tAverage\tPercentage\tGrade");
+        System.out.println("-------------------------------------------------------------------------------");
+
+        for (int i = 0; i < scores.length; i++) {
+            System.out.println(
+                    (i + 1) + "\t" +
+                    scores[i][0] + "\t" +
+                    scores[i][1] + "\t\t" +
+                    scores[i][2] + "\t" +
+                    (int) result[i][0] + "\t" +
+                    result[i][1] + "\t" +
+                    result[i][2] + "%\t\t" +
+                    grades[i]
+            );
+        }
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of students: ");
+        int students = sc.nextInt();
+
+        int[][] scores = generatePCMScores(students);
+        double[][] result = calculateResult(scores);
+        String[] grades = calculateGrade(result);
+
+        displayScoreCard(scores, result, grades);
+
+        sc.close();
+    }
+}
