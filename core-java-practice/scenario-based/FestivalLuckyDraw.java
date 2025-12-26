@@ -11,18 +11,18 @@ public class FestivalLuckyDraw {
             int number = sc.nextInt();
 
             if (number == 0) {
-                break; // stop the lucky draw
+                break; 
             }
 
             if (number < 0) {
                 System.out.println("Invalid input. Try again.");
-                continue; // skip invalid input
+                continue; 
             }
 
             visitors++;
 
             if (number % 3 == 0 && number % 5 == 0) {
-                System.out.println("🎉 Congratulations! You won a gift 🎁");
+                System.out.println("Congratulations! You won a gift 🎁");
             } else {
                 System.out.println("Sorry, better luck next time!");
             }
