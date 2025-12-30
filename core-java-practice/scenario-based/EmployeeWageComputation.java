@@ -1,4 +1,3 @@
-package scenariobased;
 public class EmployeeWageComputation {
     public static void main(String[] args) {
 
@@ -6,19 +5,37 @@ public class EmployeeWageComputation {
         System.out.println("Welcome to Employee Wage Computation Program");
 
         // Use Case 1
-        int attendence = (int) (Math.random() * 3)-1;
+        int attendence = (int) (Math.random() * 3);
         System.out.println("Attendence: " + attendence);
+        if(attendence == 0){
+            System.out.println("Employee is Absent");
+        } else {
+            System.out.println("Employee is Present");
+        }
 
         // Use Case 2
         int wagePerHour = 20;
         int workingHours = 8;
-        int dailyWage = wagePerHour * workingHours;
-        System.out.println("Daily Wage: " + dailyWage);
+        int empAttendenceFull = (int) (Math.random() * 2);
+        if(empAttendenceFull == 1){
+            int empWage = wagePerHour * workingHours;
+            System.out.println("Today's Wage: " + empWage);
+        } else {
+            System.out.println("Employee is Absent, Today's Wage: 0");
+        }
 
         // Use Case 3
         int partTimeHours = 4;
-        int partTimeWage = wagePerHour * partTimeHours;
-        System.out.println("Part Time Wage: " + partTimeWage);
+        int empAttendencePartTime = (int) (Math.random() * 3);
+        if(empAttendencePartTime == 1){
+            int empWage = wagePerHour * workingHours;
+            System.out.println("Employee is Present Full Time, Today's Wage: " + empWage);
+        } else if(empAttendencePartTime == 2){
+            int empWage = wagePerHour * partTimeHours;
+            System.out.println("Employee is Present Part Time, Today's Wage: " + empWage);
+        } else {
+            System.out.println("Employee is Absent, Today's Wage: 0");
+        }
 
         // Use Case 4
         switch(attendence){
@@ -44,10 +61,10 @@ public class EmployeeWageComputation {
                     todayWage=0;
                     break;
                 case 1:
-                    todayWage=dailyWage;
+                    todayWage=wagePerHour * workingHours;
                     break;
                 case 2:
-                    todayWage=partTimeWage;
+                    todayWage=wagePerHour * partTimeHours;
                     break; 
             }
             totalMonthlyWage+=todayWage;
@@ -65,11 +82,11 @@ public class EmployeeWageComputation {
                     todayWage=0;
                     break;
                 case 1:
-                    todayWage=dailyWage;
+                    todayWage=wagePerHour * workingHours;
                     totalHours+=workingHours;
                     break;
                 case 2:
-                    todayWage=partTimeWage;
+                    todayWage=wagePerHour * partTimeHours;
                     totalHours+=partTimeHours;
                     break; 
             }
