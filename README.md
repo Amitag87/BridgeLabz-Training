@@ -1,8 +1,8 @@
 ﻿﻿# BridgeLabz-Training
-# Core Java Practice – Daily Progress Log
+# Daily Progress Log
 
-This repository documents my daily progress while practicing Core Java concepts,OOPs,
-problem-solving, and assessments. Each entry records the work completed on a
+This repository documents my daily progress problem-solving, 
+and assessments. Each entry records the work completed on a
 specific date to maintain consistency and accountability.
 
 ---
@@ -54,9 +54,29 @@ specific date to maintain consistency and accountability.
         
 - **01 January 2025**  
   Solved questions of **java keywords**.
+          
+- **02 January 2025**  
+  Solved questions of **object and class diagrams**.
+          
+- **03 January 2025**  
+  Solved questions of **inheritance**.
+            
+- **05 January 2025**  
+  Solved questions of **excapsulation, polymorphism, abstraction**.
+            
+- **06 January 2025**  
+  Added some  **Scenerio based** questions.
+
+- **07 January 2025**  
+  Completed **questions** of **Linked List**.
+
+- **08 January 2025**  
+  Solved some  **Scenerio based** questions of OOPs.
+  
+- **09 January 2025**  
+  Solved some  **Scenerio based** questions of OOPs.
 ---
 
----
 
 ## Repository Structure
 
@@ -85,6 +105,17 @@ BridgeLabz-Training/
 │   └── leet-code-codebase/
 │
 ├── reviews/
+├── dsa-practice/
+│   │
+│   ├── gcr-codebase/
+│   │   ├── linked-list/
+│   │  
+│   │
+│   ├── scenario-based/
+│   │
+│   └── leet-code-codebase/
+│
+```
 ---
 
 ## Status
