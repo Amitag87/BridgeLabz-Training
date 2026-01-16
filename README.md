@@ -1,82 +1,56 @@
-﻿﻿# BridgeLabz-Training
-# Daily Progress Log
+﻿﻿# BridgeLabz Training – Java Full Stack
 
-This repository documents my daily progress problem-solving, 
-and assessments. Each entry records the work completed on a
-specific date to maintain consistency and accountability.
+This repository is a **clean, structured record of my training work at BridgeLabz** under the **Java Full Stack (2025–26)** program. It tracks **daily progress, lab practices, assessments, scenario-based problems, and DSA work**.
 
 ---
 
-## Progress Log
+## Repository Purpose
 
-- **16 December 2025**  
-  Inaugurated the repository.  
-  Created the repository and branch **`core-java-practice`**.  
+* Maintain **daily accountability**
+* Organize **GCR (Google Classroom) codebase** topic-wise
+* Separate **practice, scenarios, and LeetCode-style problems**
+* Build a solid, reviewable Java foundation
 
-- **17 December 2025**  
-  Solved **10 problems** from the **Google Classroom codebase**.
+This repo is meant to be **readable, scalable**.
 
-- **18 December 2025**  
-  Completed **Level 1 and Level 2 assessments** of **Programming Elements**.
-
-- **19 December 2025**  
-  Completed **Level 1, Level 2, and Level 3 assessments** of **Control Flow**.
-
-- **20 December 2025**  
-  Completed **Level 1, Level 2 assessments** of **Arrays**.
-
-- **22 December 2025**  
-  Completed **Level 1, Level 2, Level 3 assessments** of **Strings**.
-  
-- **23 December 2025**  
-  Added some  **Scenerio based** questions.
-
-- **24 December 2025**  
-  Completed **Level 1, Level 2, Level 3 assessments** of **Java functions**.
-  
-- **25 December 2025**  
-  Completed **extra** questions of **Strings**.
-
-- **26 December 2025**  
-  Added some  **Scenerio based** questions.
-  
-- **27 December 2025**  
-  Completed **extra** questions of **Functions**.
-    
-- **29 December 2025**  
-  Added some  **Scenerio based** questions.
-    
-- **30 December 2025**  
-  Solved **Line comparision and snake and ladder, Level 1 and Level 2 ** questions of object and classes.
-      
-- **31 December 2025**  
-  Solved questions of **constructors and instance**.
-        
-- **01 January 2025**  
-  Solved questions of **java keywords**.
-          
-- **02 January 2025**  
-  Solved questions of **object and class diagrams**.
-          
-- **03 January 2025**  
-  Solved questions of **inheritance**.
-            
-- **05 January 2025**  
-  Solved questions of **excapsulation, polymorphism, abstraction**.
-            
-- **06 January 2025**  
-  Added some  **Scenerio based** questions.
-
-- **07 January 2025**  
-  Completed **questions** of **Linked List**.
-
-- **08 January 2025**  
-  Solved some  **Scenerio based** questions of OOPs.
-  
-- **09 January 2025**  
-  Solved some  **Scenerio based** questions of OOPs.
 ---
 
+## Daily Progress Log
+
+### December 2025
+
+* **16 Dec** – Repository initialized. Created `core-java-practice` branch
+* **17 Dec** – Solved 10 problems from GCR codebase
+* **18 Dec** – Programming Elements (Level 1 & 2)
+* **19 Dec** – Control Flow (Level 1, 2 & 3)
+* **20 Dec** – Arrays (Level 1 & 2)
+* **22 Dec** – Strings (Level 1, 2 & 3)
+* **23 Dec** – Scenario-based problems
+* **24 Dec** – Java Methods / Functions (Level 1, 2 & 3)
+* **25 Dec** – Extra String problems
+* **26 Dec** – Scenario-based problems
+* **27 Dec** – Extra Function problems
+* **29 Dec** – Scenario-based problems
+* **30 Dec** – OOP: Line Comparison, Snake & Ladder (Objects & Classes – L1 & L2)
+* **31 Dec** – Constructors & Instance concepts
+
+### January 2025
+
+* **01 Jan** – Java keywords (`this`, `static`, `final`, `instanceof`)
+* **02 Jan** – Object Modeling & Class Diagrams
+* **03 Jan** – Inheritance
+* **05 Jan** – Encapsulation, Polymorphism, Abstraction
+* **06 Jan** – Scenario-based OOP problems
+* **07 Jan** – Linked List (DSA)
+* **08 Jan** – Scenario-based OOP problems
+* **09 Jan** – Scenario-based OOP problems
+* **12 Jan** – Scenario-based OOP problems
+* **13 Jan** – Scenario-based OOP problems
+* **14 Jan** – Stack, Queue, HashMap (DSA)
+* **15 Jan** – Sorting Algorithms based questions
+* **16 Jan** – More Sorting Algorithms based questions
+
+---
 
 ## Repository Structure
 
@@ -84,40 +58,56 @@ specific date to maintain consistency and accountability.
 BridgeLabz-Training/
 │
 ├── core-java-practice/
-│   │
 │   ├── gcr-codebase/
 │   │   ├── programming-elements/
-│   │   └── control-flow/
-│   │
-│   ├── leet-code-codebase/
-│   │
-│   └── scenario-based/
+│   │   ├── control-flow/
+│   │   ├── arrays/
+│   │   ├── strings/
+│   │   └── methods/
+│   ├── scenario-based/
+│   └── leet-code-codebase/
 │
 ├── oops-practice/
-│   │
 │   ├── gcr-codebase/
+│   │   ├── class-object/
+│   │   ├── constructors/
 │   │   ├── inheritance/
 │   │   ├── encapsulation/
-│   │   └── polymorphism/
-│   │
+│   │   ├── polymorphism/
+│   │   └── abstraction/
 │   ├── scenario-based/
-│   │
 │   └── leet-code-codebase/
 │
-├── reviews/
 ├── dsa-practice/
-│   │
 │   ├── gcr-codebase/
-│   │   ├── linked-list/
-│   │  
-│   │
+│   │   └── linked-list/
+│   │   ├── sorting-algorithms/
+│   │   ├── stack-queue-hashmap-hashing/
 │   ├── scenario-based/
-│   │
 │   └── leet-code-codebase/
 │
+└── reviews/
 ```
+
+---
+
+## How to Use This Repo
+
+* Navigate by **topic**, not by date
+* Each folder contains **self-contained Java files**
+* Scenario-based folders focus on **real-world logic**
+
 ---
 
 ## Status
 
-🚀 **Ongoing – Daily updates in progress**
+**Ongoing.** Updated daily as the program progresses.
+
+This repository reflects **discipline, consistency, and depth**, not just completion.
+
+---
+
+## Author
+
+**Amit Agarwal**
+Java | OOPs | DSA | Full Stack (in progress)
