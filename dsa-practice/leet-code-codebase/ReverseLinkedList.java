@@ -1,3 +1,4 @@
+// LeetCode 206: Reverse Linked List
 class ListNode {
     int val;
     ListNode next;
@@ -7,7 +8,23 @@ class ListNode {
 }
 
 public class ReverseLinkedList {
-    public ListNode reverseList(ListNode head) {
+    public static void main(String[] args) {
+        // Create test list: [1,2,3,4,5]
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+        
+        System.out.print("Original: ");
+        printList(head);
+        
+        ListNode reversed = reverseList(head);
+        System.out.print("Reversed: ");
+        printList(reversed);
+    }
+    
+    static ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
         
@@ -17,45 +34,14 @@ public class ReverseLinkedList {
             prev = current;
             current = next;
         }
-        
         return prev;
     }
     
-    public static ListNode createList(int[] arr) {
-        if (arr.length == 0) return null;
-        
-        ListNode head = new ListNode(arr[0]);
-        ListNode current = head;
-        
-        for (int i = 1; i < arr.length; i++) {
-            current.next = new ListNode(arr[i]);
-            current = current.next;
-        }
-        
-        return head;
-    }
-    
-    public static void printList(ListNode head) {
-        ListNode current = head;
-        while (current != null) {
-            System.out.print(current.val);
-            if (current.next != null) System.out.print(" -> ");
-            current = current.next;
+    static void printList(ListNode head) {
+        while (head != null) {
+            System.out.print(head.val + " ");
+            head = head.next;
         }
         System.out.println();
-    }
-    
-    public static void main(String[] args) {
-        ReverseLinkedList solution = new ReverseLinkedList();
-        
-        int[] arr = {1, 2, 3, 4, 5};
-        ListNode head = createList(arr);
-        
-        System.out.print("Original: ");
-        printList(head);
-        
-        ListNode reversed = solution.reverseList(head);
-        System.out.print("Reversed: ");
-        printList(reversed);
     }
 }
