@@ -49,7 +49,7 @@ public class CinemaTime {
         }
         
         if (!found) {
-            System.out.println("No movies found with keyword: " + keyword);
+            System.out.println("No movies found");
         }
     }
     
@@ -65,7 +65,7 @@ public class CinemaTime {
                 String movie = (i + 1) + ". " + movieTitles.get(i) + " - " + movieTimes.get(i);
                 System.out.println(movie);
             } catch (IndexOutOfBoundsException e) {
-                System.out.println("Error accessing movie at index " + i);
+                System.out.println("Error at index " + i);
             }
         }
     }
@@ -73,7 +73,7 @@ public class CinemaTime {
     public String[] generateReport() {
         String[] report = new String[movieTitles.size()];
         for (int i = 0; i < movieTitles.size(); i++) {
-            report[i] = String.format("%-25s | %s", movieTitles.get(i), movieTimes.get(i));
+            report[i] = String.format("%-20s | %s", movieTitles.get(i), movieTimes.get(i));
         }
         return report;
     }
@@ -81,7 +81,6 @@ public class CinemaTime {
     public void printReport() {
         System.out.println("\\n=== Cinema Report ===");
         String[] report = generateReport();
-        
         for (String line : report) {
             System.out.println(line);
         }
@@ -96,15 +95,10 @@ public class CinemaTime {
             cinema.addMovie("Batman", "20:15");
             
             cinema.displayAllMovies();
-            
             cinema.searchMovie("Spider");
-            cinema.searchMovie("Superman");
-            
             cinema.printReport();
             
-            // Test invalid time
-            cinema.addMovie("Invalid Movie", "25:99");
-            
+            cinema.addMovie("Invalid", "25:99");
         } catch (InvalidTimeFormatException e) {
             System.out.println("Error: " + e.getMessage());
         }
