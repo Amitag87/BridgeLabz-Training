@@ -54,7 +54,6 @@ class Meal<T extends MealPlan> {
 
 public class PersonalizedMealPlanGenerator {
     public static <T extends MealPlan> boolean validateMealPlan(Meal<T> meal) {
-        // Simple validation - check if meal has ingredients
         if (meal.ingredients.isEmpty()) {
             System.out.println("Invalid meal plan: No ingredients specified");
             return false;
@@ -73,7 +72,6 @@ public class PersonalizedMealPlanGenerator {
     }
     
     public static void main(String[] args) {
-        // Generate different meal plans
         Meal<VegetarianMeal> vegMeal = generateMealPlan(
             "Veggie Pasta", 
             new VegetarianMeal(), 
@@ -98,7 +96,7 @@ public class PersonalizedMealPlanGenerator {
             Arrays.asList("Chicken Breast", "Broccoli", "Brown Rice")
         );
         
-        System.out.println("\\n=== Generated Meal Plans ===");
+        System.out.println("\n=== Generated Meal Plans ===");
         if (vegMeal != null) vegMeal.displayMeal();
         System.out.println();
         if (veganMeal != null) veganMeal.displayMeal();

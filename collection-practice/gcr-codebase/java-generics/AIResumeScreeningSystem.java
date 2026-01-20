@@ -92,7 +92,6 @@ public class AIResumeScreeningSystem {
     }
     
     public static void main(String[] args) {
-        // Create resumes for different roles
         Resume<SoftwareEngineer> seResume = processResume(
             "Alice Johnson", 
             Arrays.asList("Java", "Python", "Git", "Spring"), 
@@ -117,7 +116,6 @@ public class AIResumeScreeningSystem {
             new SoftwareEngineer()
         );
         
-        // Screen all resumes using wildcards
         List<Resume<? extends JobRole>> allResumes = new ArrayList<>();
         allResumes.add(seResume);
         allResumes.add(dsResume);

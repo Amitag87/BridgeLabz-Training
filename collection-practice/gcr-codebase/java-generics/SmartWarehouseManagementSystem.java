@@ -6,6 +6,7 @@ abstract class WarehouseItem {
     WarehouseItem(String name) {
         this.name = name;
     }
+    
     abstract void display();
 }
 
@@ -81,4 +82,3 @@ public class SmartWarehouseManagementSystem {
         displayAllItems(furnitureStorage.getItems());
     }
 }
-

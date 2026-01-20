@@ -83,12 +83,12 @@ public class DynamicOnlineMarketplace {
             product.display();
         }
         
-        System.out.println("\\nApplying Discounts:");
+        System.out.println("\nApplying Discounts:");
         applyDiscount(book, 10);
         applyDiscount(shirt, 20);
         applyDiscount(phone, 15);
         
-        System.out.println("\\nDiscounted Prices:");
+        System.out.println("\nDiscounted Prices:");
         for (Product<?> product : catalog) {
             product.display();
         }
