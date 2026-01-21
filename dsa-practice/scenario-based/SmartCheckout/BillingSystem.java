@@ -1,5 +1,6 @@
 import java.util.*;
-public class Customer{
+
+class Customer {
     String name;
     List<String> items;
 
@@ -8,6 +9,7 @@ public class Customer{
         this.items = items;
     }
 }
+
 public class BillingSystem {
     public static void main(String[] args) {
 
