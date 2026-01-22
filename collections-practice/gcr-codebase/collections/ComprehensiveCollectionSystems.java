@@ -1,6 +1,5 @@
 import java.util.*;
 
-// Voting System
 class VotingSystem {
     private HashMap<String, Integer> votes = new HashMap<>();
     private LinkedHashMap<String, Integer> voteOrder = new LinkedHashMap<>();
@@ -26,7 +25,6 @@ class VotingSystem {
     }
 }
 
-// Shopping Cart
 class ShoppingCart {
     private HashMap<String, Double> productPrices = new HashMap<>();
     private LinkedHashMap<String, Integer> cartItems = new LinkedHashMap<>();
@@ -63,8 +61,6 @@ class ShoppingCart {
         System.out.println("Total: ₹" + total);
     }
 }
-
-// Banking System
 class BankingSystem {
     private HashMap<String, Double> accounts = new HashMap<>();
     private Queue<String> withdrawalQueue = new LinkedList<>();
@@ -107,7 +103,7 @@ class BankingSystem {
 
 public class ComprehensiveCollectionSystems {
     public static void main(String[] args) {
-        // Test Voting System
+       
         System.out.println("=== VOTING SYSTEM ===");
         VotingSystem voting = new VotingSystem();
         voting.vote("Alice");
@@ -117,7 +113,6 @@ public class ComprehensiveCollectionSystems {
         voting.vote("Bob");
         voting.displayResults();
         
-        // Test Shopping Cart
         System.out.println("\\n\\n=== SHOPPING CART ===");
         ShoppingCart cart = new ShoppingCart();
         cart.addItem("Laptop", 1);
@@ -125,7 +120,7 @@ public class ComprehensiveCollectionSystems {
         cart.addItem("Keyboard", 1);
         cart.displayCart();
         
-        // Test Banking System
+        
         System.out.println("\\n\\n=== BANKING SYSTEM ===");
         BankingSystem bank = new BankingSystem();
         bank.createAccount("ACC001", 50000.0);
