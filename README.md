@@ -210,30 +210,28 @@ Problem statement topics: StringBuilder, StringBuffer, FileReader and InputStrea
 
 ### - 19 January 2026
 Topics studied: Java generics             
-Problem statement topics: Runtime analysis, Address Book, Leetcode questions     
-[Runtime analysis problem statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/gcr-codebase/runtime-analysis)     
-[Address Book Problem statement link](https://github.com/apurva011104/BridgeLabz-Training/tree/oops-practice/oops-practice/gcr-codebase/address-book)     
-**Leetcode Problem Statements:** [Build an array with stack operations](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/BuildAnArrayWithStackOperations.java), [Evaluate Reverse Polish Notation](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/EvaluateReversePolishNotation.java), [Find all numbers disappeared in an array](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/FindAllNumbersDisappearedInAnArray.java)
+Problem statement topics: Runtime analysis, Address Book, Leetcode questions  
+**Leetcode Problem Statements:** [Build an array with stack operations], [Evaluate Reverse Polish Notation], [Find all numbers disappeared in an array]
 
 ### - 20 January 2026
 Topics studied: Java collections framework    
 Problem statement topics: Scenario based problems    
-**Scenario based problem statements:** [Book Shelf](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/book-shelf), [Browser Buddy](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/browser-buddy), [Parcel Tracker](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/parcel-tracker), [Traffic Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/traffic-manager)   
+**Scenario based problem statements:** [Book Shelf], [Browser Buddy], [Parcel Tracker], [Traffic Manager]
 
 ### - 21 January 2026
 Topics Studied: Java Collections Framework    
 Problem statement topics: Java Generics     
-[Java Generics Problem Statements link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice)
+[Java Generics Problem Statements link](https://github.com/Amitag87/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-generics)
 
 ### - 22 January 2026
 Topics studied: Java IO Streams    
 Problem statement topics: Java Collections Framework   
-[Java Collections Framework Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections-framework)
+[Java Collections Framework Problem Statements Link](https://github.com/Amitag87/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/collections)
 
 ### - 23 January 2026
 Topics Studied: Exceptions Handling in Java     
 Problem statement topics: Java IO Streams   
-[Java IO Streams Problem Statements Link](https://github.com/apurva011104/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-io-streams)    
+[Java IO Streams Problem Statements Link](https://github.com/Amitag87/BridgeLabz-Training/tree/collections-practice/collections-practice/gcr-codebase/java-streams)    
 
 ## Week 6 (26/January/2026 - 31/January/2026) - Advance Java Programming
 
@@ -245,5 +243,5 @@ Problem statement topics: Exceptions Handling in Java
 ### - 27 January 2026
 Topics studied: Java Regex, JUnit    
 Problem statement topics: Scenario-based problem statements, Leetcode problem statements    
-**Scenario based problem statements:** [Exam Proctor - Online Exam Review System](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/exam-proctor), [Cinema Time – Movie Schedule Manager](https://github.com/apurva011104/BridgeLabz-Training/tree/dsa-practice/dsa-practice/scenario-based/cinema-time)     
-**Leetcode Problems Link:** [Number of steps to reduce a number to zero](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/NumberOfStepsToReduceANumberToZero.java), [Swap nodes in pairs](https://github.com/apurva011104/BridgeLabz-Training/blob/dsa-practice/dsa-practice/leetcode-codebase/SwapNodesInPairs.java)    
+**Scenario based problem statements:** [Exam Proctor - Online Exam Review System], [Cinema Time – Movie Schedule Manager] 
+**Leetcode Problems Link:** [Number of steps to reduce a number to zero], [Swap nodes in pairs]
