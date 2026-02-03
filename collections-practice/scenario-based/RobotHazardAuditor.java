@@ -41,7 +41,7 @@ class RobotHazardAuditor {
     }
 }
 
-public class Program {
+public class RobotHazardAuditor{
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
