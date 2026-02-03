@@ -1,0 +1,7 @@
+{
+  "name": "Chaman",
+  "age": 22,
+  "course": "Computer Science",
+  "skills": ["Java", "React", "MongoDB"],
+  "active": true
+}
